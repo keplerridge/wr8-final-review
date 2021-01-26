@@ -1,38 +1,50 @@
 .App {
   text-align: center;
+  background-color: #25AAE1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  height: 30px;
+  width: 350px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+  font-size: 20px;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  height: 30px;
+  width: 350px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 20px;
+  outline: none;
+}
+
+.authentication-info button:hover {
+  background-color: white;
+  color: #444445;
+}
+
+.authentication-info button:active {
+  background-color: transparent;
+  color: white;
 }

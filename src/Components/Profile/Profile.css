@@ -1,0 +1,16 @@
+.profile {
+    height: calc(100vh - 100px);
+    color: white;
+}
+
+.profile-picture {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+#edit-btn {
+    width: 100px;
+}
